@@ -1,15 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
+import ButtonWhite from '../components/ButtonWhite.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import ButtonBlack from "../components/ButtonBlack.astro";
 ---
 <MainLayout title="Titel">
 	<article>
 		<h1>Hejsa dette er en github test</h1>
 		<h2>det her er en underoverskrift</h2>
-		<Button>Klik!</Button>
+		<ButtonWhite>Klik!</ButtonWhite>
+		<ButtonBlack>Submit a photo</ButtonBlack>
 		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
 		<Image src={thumbsup} alt=""></Image>
 	</article>
