@@ -51,18 +51,61 @@ import ButtonBlack from "../components/ButtonBlack.astro";
     </ButtonWhite>
   </div>
 </section>
+<!---------------------------------------------SLUT HERO HER-->
 
-<section>
-  <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-    <h2 class="font-heading text-[length:var(--h2-mobile-size)] md:text-[length:var(--h2-size)]
-               text-[var(--color-darkblue)] text-center mb-6 md:mb-8">
-      About Instant Day
-    </h2>
-    <p class="text-[var(--color-darkblue)] text-center max-w-3xl mx-auto">
-      Instant Day is a global photography event that takes place annually on the 18th of October. On this day, people from all over the world are encouraged to capture and share a photo that represents their day. The goal of Instant Day is to create a collective snapshot of life on Earth, showcasing the diversity and beauty of our planet through the eyes of its inhabitants.
-    </p>
+
+<section class="container-global py-12 md:py-20 px-10 sm:px-6">
+  <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-12 gap-y-10 md:gap-y-16">
+
+    <!-- Række 1: What is InstantDay -->
+    <div class="md:col-start-2 md:col-span-10">
+      <h1>What is InstantDay?</h1>
+      <h2 class="mt-2">A day for the love of nostalgia and photography</h2>
+      <p class="mt-6 max-w-prose">
+        October 18 is Instant Day - a day all about celebrating instant photography. So get out your Polaroid,
+        Instax or whatever instant photography camera you are using, and show us your instants. Instant Day isn’t
+        really a photo competition, it’s more a homage to good old analogue, instant photography - everybody who
+        participates are winners. But: We do have a nice prize for one lucky instant photographer!
+      </p>
+    </div>
+
+    <!-- Række 2: Why instant photography (tekst) -->
+    <div class="md:row-start-2 md:col-start-6 md:col-span-7 md:-mt-12">
+      <h1>Why instant photography?</h1>
+      <h2 class="mt-2">Instant Photography is a testament to life</h2>
+
+      <div class="mt-6 space-y-5 max-w-prose">
+        <p>
+      It all started back in the 1940’s with a 3 year old kid. She wanted to see her fathers images right away. The father, Edwin Land, embarked on a mission: To invent instant photography. Half a decade later, Edwin Land launched Instant photography and established the Polaroid brand. Instant photography turned into big business in the 70’s and 80’s, until the digital era almost killed the industry.
+ 
+The massive amount of time wasted on the small screens have spurred a counterreaction: Analogue, off-line experiences have become popular again. And instant photography is just that: An analogue, life-affirming and tactile photography experience. So let’s celebrate life, and make memories!
+        </p>
+      </div>
+    </div>
+
+    <!-- tegning: mobil = efter teksten, højrejusteret.
+         Desktop = venstre for 2. sektion (kol. 2-4). -->
+   <div
+  class="order-3 flex justify-end mt-6
+         md:order-none md:row-start-2 md:col-start-2 md:col-span-3 md:justify-start md:mt-0">
+  <img 
+    src="/svg/instax_drawing.svg" 
+    alt="" 
+    class="w-24 sm:w-28 md:w-40 lg:w-48"
+  />
+</div>
   </div>
+
+  <!---------------------------------------------SLUT sektion 1 HER-->
+
 </section>
+
+
+
+
+
+
+
 </MainLayout>
 
 <!-- <article>
