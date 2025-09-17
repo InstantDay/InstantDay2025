@@ -34,8 +34,8 @@
 /* 3) Definerer ALLE variabler, som bruges nedenfor */
 @theme {
   --color-background: #e8e4dd;
-  --color-w-txt: #e8e4dd;
-  --color-b-txt: #352f2c;
+  --color-beige: #e8e4dd;
+  --color-brown: #352f2c;
 
   /* font-familier */
   --font-heading: "Dream Orphans", serif;
