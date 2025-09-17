@@ -91,6 +91,12 @@
     font-size: var(--p-smaller-size);
   }
 
+  .a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
   /* mobil */
   @media (max-width: 768px) {
     h1 {
