@@ -1,0 +1,15 @@
+<div class="flex justify-center items-center w-full">
+  <button
+    class="w-55 h-12 md:w-64 md:h-13
+           inline-flex items-center justify-center
+           bg-transparent
+           border border-[var(--color-brown)] text-[var(--color-brown)]
+           transition-all duration-300 ease-in-out
+           hover:border-4">
+    <span
+      class="font-subheading leading-none
+             text-[length:var(--h2-mobile-size)] md:text-[length:var(--h2-size)]">
+      <slot />
+    </span>
+  </button>
+</div>
