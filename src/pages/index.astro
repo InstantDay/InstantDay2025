@@ -7,195 +7,165 @@ import thumbsup from "../assets/images/thumbsup.png";
 import ButtonBlack from "../components/ButtonBlack.astro";
 ---
 <MainLayout title="Home">
-<section class="relative isolate min-h-[120vh] md:min-h-[110vh]">
-  <!-- Baggrundsbillede -->
-  <img
-    src="/hero.png"
-    alt=""
-    class="absolute inset-0 -z-10 w-full h-full object-cover object-bottom"
-    aria-hidden="true"
-  />
+  <!-- HERO -->
+  <section class="relative isolate min-h-[120vh] md:min-h-[110vh]">
+    <!-- Baggrundsbillede -->
+    <img
+      src="/hero.png"
+      alt=""
+      class="absolute inset-0 -z-10 w-full h-full object-cover object-bottom"
+      aria-hidden="true"
+    />
 
-  <!-- Logo -->
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div></div>
-
-    <div class="flex justify-center">
-      <img 
-        class="w-[70%] md:w-[68%] pt-25 mx-auto md:mx-0" 
-        src="svg/logo_hero.svg" 
-        alt="Instant Day Logo"
-      >
-    </div>
-  </div>
-
-  <!-- Tekst -->
-  <div class="col-span-1 md:col-span-2 text-center mt-10">
-    <p class="font-heading text-[24px] md:text-[28px] leading-tight text-[var(--color-beige)]">
-      Join us the 18th of October
-    </p>
-  </div>
-
-  <!-- CTA-knapper -->
-  <div class="grid grid-cols-1 md:grid-cols-3 pt-8 gap-4 max-w-4xl mx-auto">
-    <ButtonWhite>
-      Submit a photo
-    </ButtonWhite>
-
-    <ButtonWhite >
-      Save the date
-    </ButtonWhite>
-
-    <ButtonWhite>
-      See the gallery
-    </ButtonWhite>
-  </div>
-</section>
-<!---------------------------------------------SLUT HERO HER-->
-
-
-<section class="container-global py-12 md:py-20 px-10 sm:px-6">
-  <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-12 gap-y-10 md:gap-y-16">
-
-    <!-- Række 1: What is InstantDay -->
-    <div class="md:col-start-2 md:col-span-10">
-      <h1>What is InstantDay?</h1>
-      <h2 class="mt-2">A day for the love of nostalgia and photography</h2>
-      <p class="mt-6 max-w-prose">
-        October 18 is Instant Day - a day all about celebrating instant photography. So get out your Polaroid,
-        Instax or whatever instant photography camera you are using, and show us your instants. Instant Day isn’t
-        really a photo competition, it’s more a homage to good old analogue, instant photography - everybody who
-        participates are winners. But: We do have a nice prize for one lucky instant photographer!
-      </p>
-    </div>
-
-    <!-- Række 2: Why instant photography (tekst) -->
-    <div class="md:row-start-2 md:col-start-6 md:col-span-7 md:-mt-12">
-      <h1>Why instant photography?</h1>
-      <h2 class="mt-2">Instant Photography is a testament to life</h2>
-
-      <div class="mt-6 space-y-5 max-w-prose">
-        <p>
-      It all started back in the 1940’s with a 3 year old kid. She wanted to see her fathers images right away. The father, Edwin Land, embarked on a mission: To invent instant photography. Half a decade later, Edwin Land launched Instant photography and established the Polaroid brand. Instant photography turned into big business in the 70’s and 80’s, until the digital era almost killed the industry.
- 
-The massive amount of time wasted on the small screens have spurred a counterreaction: Analogue, off-line experiences have become popular again. And instant photography is just that: An analogue, life-affirming and tactile photography experience. So let’s celebrate life, and make memories!
-        </p>
+    <!-- Logo -->
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div></div>
+      <div class="flex justify-center">
+        <img 
+          class="w-[70%] md:w-[68%] pt-25 mx-auto md:mx-0" 
+          src="svg/logo_hero.svg" 
+          alt="Instant Day Logo"
+        >
       </div>
     </div>
 
-    <!-- tegning: mobil = efter teksten, højrejusteret.
-         Desktop = venstre for 2. sektion (kol. 2-4). -->
-   <div
-  class="order-3 flex justify-end mt-6
-         md:order-none md:row-start-2 md:col-start-2 md:col-span-3 md:justify-start md:mt-0">
-  <img 
-    src="/svg/instax_drawing.svg" 
-    alt="" 
-    class="w-24 sm:w-28 md:w-40 lg:w-48"
-  />
-</div>
-  </div>
-</section>
-
-<!---------------------------------------------SLUT sektion 1 HER-->
-
-<section class="container-global py-12 md:py-20 px-10 sm:px-6">
-  <!-- Vertikal spacing mellem de to hovedblokke -->
-  <div class="space-y-10">
-    
-    <div>
-      <h1>Take a look at some of the submissions <br> from the past for inspiration</h1>
-    </div>
-
-<section class="container-global py-12 md:py-20">
-  <div class="grid grid-cols-3 gap-3 md:grid-cols-5 md:gap-6 justify-items-center">
-
-    <!-- Vises på mobil + desktop -->
-    <img src="polaroid_sek_2/grid_1/1_1.png"   alt="Polaroid 1"
-         class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
-
-    <img src="polaroid_sek_2/grid_1/1_2.png"   alt="Polaroid 2"
-         class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
-
-    <img src="polaroid_sek_2/grid_1/1_2_2.png" alt="Polaroid 3"
-         class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
-
-    <!-- Nederste række på mobil: span 2 + 1 for at få offset -->
-    <img src="polaroid_sek_2/grid_1/1_3_2.png" alt="Polaroid 4"
-         class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-2 md:col-span-1" />
-
-    <img src="polaroid_sek_2/grid_2/2_1_2.png" alt="Polaroid 5"
-         class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
-
-    <!-- Skjul disse på mobil, vis på md+ for desktop-layoutet -->
-    <img src="polaroid_sek_2/grid_2/2_1.png"   alt="Polaroid 6"
-         class="hidden md:block max-w-[160px] w-full h-auto" />
-    <img src="polaroid_sek_2/grid_2/2_2.png"   alt="Polaroid 7"
-         class="hidden md:block max-w-[160px] w-full h-auto" />
-    <img src="polaroid_sek_2/grid_2/2_3_1.png" alt="Polaroid 8"
-         class="hidden md:block max-w-[160px] w-full h-auto" />
-    <img src="polaroid_sek_2/grid_2/2_3_2.png" alt="Polaroid 9"
-         class="hidden md:block max-w-[160px] w-full h-auto" />
-
-  </div>
-</section>
-
-<section class="container-global py-12 grid grid-cols-1 md: grid-cols-2">
-
-  <div class="grid grid-cols-2 justify-items-center">
-    <div class="flex flex-col gap-4">
-      <img src="polaroid_sek_2/grid_3/3_1_2.png" alt="Polaroid 1"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-      <img src="polaroid_sek_2/grid_3/3_1_3.png" alt="Polaroid 2"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-      <img src="polaroid_sek_2/grid_3/3_1.png" alt="Polaroid 3"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-    </div>
-
-    <div class="flex flex-col gap-4">
-      <img src="polaroid_sek_2/grid_3/3_2_1.png" alt="Polaroid 4"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-      <img src="polaroid_sek_2/grid_3/3_2_2.png" alt="Polaroid 5"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-      <img src="polaroid_sek_2/grid_3/3_2_3.png" alt="Polaroid 6"
-           class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
-    </div>
-  </div>
-
-  <div class="space-y-4">
-	<h1>You can also get a lot of inspiration <br> from the art Photography scene</h1>
-	
-	<p>
-        The Polaroid collection was a large collection of instant photographs assembled by the Polaroid corporation and featured work from a lot of famous photographers. The collection was split into various parts and put on auction when the Polaroid corporation went into bankruptcy in 2008. Luckily, you can find books with photographs from the collection, for instance The Polaroid Book by Steve Crist and Barbara Hitchcock – link to it 
-        <a href="https://www.taschen.com/en/books/photography/40752/the-polaroid-book-45th-ed/">here</a>.
+    <!-- Tekst -->
+    <div class="col-span-1 md:col-span-2 text-center mt-10">
+      <p class="font-heading text-[24px] md:text-[28px] leading-tight text-[var(--color-beige)]">
+        Join us the 18th of October
       </p>
-
-      <p><b>Dan Isaac Wallin</b> is a swedish art photographer, who uses large format and vintage polaroid cameras for his work. His work hangs in numerous houses as posters.</p>
-
-      <p><b>Mette Kelter</b> is a danish art photographer, who often experiments with deliberate destruction of the chemical process in instant photos. One of the key words here is unpredictability in the work process, which leads to interesting and unique artworks. Take a look at her work here.</p>
-
-      <p><b>Maripol</b> is a french artist/photographer/film producer. Her claim to fame was in the 1980’s, where she photographed famous people with a Polaroid SX-70. Her photographs are still very influential in the fashion industry. Read more here.</p>
     </div>
 
-  </div>
-</section>
+    <!-- CTA-knapper -->
+    <div class="grid grid-cols-1 md:grid-cols-3 pt-8 gap-4 max-w-4xl mx-auto">
+      <ButtonWhite>Submit a photo</ButtonWhite>
+      <ButtonWhite>Save the date</ButtonWhite>
+      <ButtonWhite>See the gallery</ButtonWhite>
+    </div>
+  </section>
 
+  <!---------------------------------------------SLUT HERO HER-->
 
+  <!-- SEKTION 2 -->
+  <section class="container-global py-12 md:py-20 px-6 md:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 md:gap-x-12 gap-y-10 md:gap-y-16">
+      <!-- Række 1: What is InstantDay -->
+      <div class="md:col-start-2 md:col-span-10">
+        <h1>What is InstantDay?</h1>
+        <h2 class="mt-2">A day for the love of nostalgia and photography</h2>
+        <p class="mt-6 max-w-prose">
+          October 18 is Instant Day - a day all about celebrating instant photography. So get out your Polaroid,
+          Instax or whatever instant photography camera you are using, and show us your instants. Instant Day isn’t
+          really a photo competition, it’s more a homage to good old analogue, instant photography - everybody who
+          participates are winners. But: We do have a nice prize for one lucky instant photographer!
+        </p>
+      </div>
 
+      <!-- Række 2: Why instant photography (tekst) -->
+      <div class="md:row-start-2 md:col-start-6 md:col-span-7 md:-mt-12">
+        <h1>Why instant photography?</h1>
+        <h2 class="mt-2">Instant Photography is a testament to life</h2>
 
+        <div class="mt-6 space-y-5 max-w-prose">
+          <p>
+            It all started back in the 1940’s with a 3 year old kid. She wanted to see her fathers images right away. 
+            The father, Edwin Land, embarked on a mission: To invent instant photography. Half a decade later, Edwin Land
+            launched Instant photography and established the Polaroid brand. Instant photography turned into big business
+            in the 70’s and 80’s, until the digital era almost killed the industry.
+          </p>
+          <p>
+            The massive amount of time wasted on the small screens have spurred a counterreaction: Analogue, off-line
+            experiences have become popular again. And instant photography is just that: An analogue, life-affirming and
+            tactile photography experience. So let’s celebrate life, and make memories!
+          </p>
+        </div>
+      </div>
 
-</section>
+      <!-- Tegning -->
+      <div class="order-3 flex justify-end mt-6 md:order-none md:row-start-2 md:col-start-2 md:col-span-3 md:justify-start md:mt-0">
+        <img 
+          src="/svg/instax_drawing.svg" 
+          alt="" 
+          class="w-24 sm:w-28 md:w-40 lg:w-48"
+        />
+      </div>
+    </div>
+  </section>
 
+  <!---------------------------------------------SLUT sektion 2 HER-->
 
+  <!-- SEKTION 3 -->
+  <section class="container-global py-12 md:py-20 px-6 md:px-20">
+    <div class="space-y-10">
+      <div>
+        <h1>Take a look at some of the submissions <br> from the past for inspiration</h1>
+      </div>
 
+      <!-- GRID med billeder -->
+      <section class="container-global py-0 md:py-0">
+        <div class="grid grid-cols-3 gap-0 md:grid-cols-5 md:gap-0 justify-items-center">
+          <img src="polaroid_sek_2/grid_1/1_1.png"   alt="Polaroid 1"
+               class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
+          <img src="polaroid_sek_2/grid_1/1_2.png"   alt="Polaroid 2"
+               class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
+          <img src="polaroid_sek_2/grid_1/1_2_2.png" alt="Polaroid 3"
+               class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
+          <img src="polaroid_sek_2/grid_1/1_3_2.png" alt="Polaroid 4"
+               class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-2 md:col-span-1" />
+          <img src="polaroid_sek_2/grid_2/2_1_2.png" alt="Polaroid 5"
+               class="max-w-[100px] md:max-w-[160px] w-full h-auto col-span-1 md:col-span-1" />
 
+          <!-- Skjul disse på mobil -->
+          <img src="polaroid_sek_2/grid_2/2_1.png"   alt="Polaroid 6"
+               class="hidden md:block max-w-[160px] w-full h-auto" />
+          <img src="polaroid_sek_2/grid_2/2_2.png"   alt="Polaroid 7"
+               class="hidden md:block max-w-[160px] w-full h-auto" />
+          <img src="polaroid_sek_2/grid_2/2_3_1.png" alt="Polaroid 8"
+               class="hidden md:block max-w-[160px] w-full h-auto" />
+          <img src="polaroid_sek_2/grid_2/2_3_2.png" alt="Polaroid 9"
+               class="hidden md:block max-w-[160px] w-full h-auto" />
+        </div>
+      </section>
+
+      <!-- GRID med billeder + tekst -->
+      <section class="container-global grid grid-cols-1 md:grid-cols-2 md:sm:px-6">
+        <!-- Billeder -->
+        <div class="order-2 md:order-1 grid grid-cols-2 gap-8 justify-items-center md:justify-items-start pt-10 md:pt-0">
+          <div class="flex flex-col gap-8">
+            <img src="polaroid_sek_2/grid_3/3_1_2.png" alt="Polaroid 1"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+            <img src="polaroid_sek_2/grid_3/3_1_3.png" alt="Polaroid 2"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+            <img src="polaroid_sek_2/grid_3/3_1.png" alt="Polaroid 3"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+          </div>
+
+          <div class="flex flex-col gap-8">
+            <img src="polaroid_sek_2/grid_3/3_2_1.png" alt="Polaroid 4"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+            <img src="polaroid_sek_2/grid_3/3_2_2.png" alt="Polaroid 5"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+            <img src="polaroid_sek_2/grid_3/3_2_3.png" alt="Polaroid 6"
+                 class="max-w-[100px] md:max-w-[160px] w-full h-auto" />
+          </div>
+        </div>
+
+        <!-- Tekst -->
+        <div class="order-1 md:order-2 space-y-4">
+          <h1>You can also get a lot of inspiration <br /> from the art Photography scene</h1>
+
+          <p>
+            The Polaroid collection was a large collection of instant photographs assembled by the Polaroid corporation and featured work from a lot of famous photographers. The collection was split into various parts and put on auction when the Polaroid corporation went into bankruptcy in 2008. Luckily, you can find books with photographs from the collection, for instance The Polaroid Book by Steve Crist and Barbara Hitchcock – link to it 
+            <a href="https://www.taschen.com/en/books/photography/40752/the-polaroid-book-45th-ed/">here</a>.
+          </p>
+
+          <p><b>Dan Isaac Wallin</b> is a swedish art photographer, who uses large format and vintage polaroid cameras for his work. His work hangs in numerous houses as posters.</p>
+
+          <p><b>Mette Kelter</b> is a danish art photographer, who often experiments with deliberate destruction of the chemical process in instant photos. One of the key words here is unpredictability in the work process, which leads to interesting and unique artworks. Take a look at her work here.</p>
+
+          <p><b>Maripol</b> is a french artist/photographer/film producer. Her claim to fame was in the 1980’s, where she photographed famous people with a Polaroid SX-70. Her photographs are still very influential in the fashion industry. Read more here.</p>
+        </div>
+      </section>
+    </div>
+  </section>
 </MainLayout>
-
-<!-- <article>
-	<h1>Hejsa dette er en github test</h1>
-	<h2>det her er en underoverskrift</h2>
-	<ButtonWhite>Klik!</ButtonWhite>
-	<ButtonBlack>Submit a photo</ButtonBlack>
-	<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	<Image src={thumbsup} alt=""></Image>
-</article> -->
