@@ -1,14 +1,58 @@
-@import 'tailwindcss';
+/* 1) Importerer fonte */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dream Orphans";
+  src: url("/fonts/Dream Orphans.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("/fonts/ReenieBeanie-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* 2) Tailwind + plugins */
+@import "tailwindcss";
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
+/* 3) Definerer ALLE variabler, som bruges nedenfor */
 @theme {
-  /* Her tilføjes theme variable // tokens */
+  --color-background: #e8e4dd;
+  --color-w-txt: #e8e4dd;
+  --color-b-txt: #352f2c;
+
+  /* font-familier */
+  --font-heading: "Dream Orphans", serif;
+  --font-subheading: "Reenie Beanie", cursive;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* størrelser på tekst*/
+  --h1-size: 65px;
+  --h1-mobile-size: 30px;
+  --h2-size: 35px;
+  --h2-mobile-size: 20px;
+  --p-size: 20px;
+  --p-smaller-size: 17px;
+  --p-mobile-size: 14px;
 }
 
+/* 4) Globale styles (gælder også uden klasser) */
 @layer base {
   *,
   ::after,
@@ -17,11 +61,53 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  html,
+  body {
+    background: var(--color-background);
+    color: var(--color-b-txt);
+  }
+
+  html {
+    font-family: var(--font-body);
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
+    line-height: 1.05;
+  }
+  h2 {
+    font-family: var(--font-subheading);
+    font-size: var(--h2-size);
+    line-height: 1.1;
+  }
+  p {
+    font-family: var(--font-body);
+    font-size: var(--p-size);
+    line-height: 1.6;
+  }
+  .p-smaller {
+    font-size: var(--p-smaller-size);
+  }
+
+  /* mobil */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--h1-mobile-size);
+    }
+    h2 {
+      font-size: var(--h2-mobile-size);
+    }
+    p {
+      font-size: var(--p-mobile-size);
+    }
+  }
 }
 
-@layer components{
-
+/* 5) Hvis du bruger typography-plugin (.prose), overstyr det her */
+@layer components {
 }
-@layer utilities{
-  
+
+@layer utilities {
 }
