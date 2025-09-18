@@ -3,18 +3,27 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="About">
-  <section class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
+  <section class="max-w-7xl mx-auto px-4 md:px-8 pt-8">
     <div>
-        <h1>Who are we?</h1>
-        <p>Instant Day is a small project run by a couple of lecturers from the Multimedia Design programme at EK - Business Academy Copenhagen. Instant Day is a bi-annual project where lecturers and students collaborate on a digital design and communication project related to the Instant Day competition (this website). In essence, we just want to promote instant photography and have fun while doing it. Cheers.</p>
+        <h1 class="font-semibold">Who are we?</h1>
+        <p class="my-4 max-w-3xl">Instant Day is a small project run by a couple of lecturers from the Multimedia Design programme at EK - Business Academy Copenhagen. Instant Day is a bi-annual project where lecturers and students collaborate on a digital design and communication project related to the Instant Day competition (this website). In essence, we just want to promote instant photography and have fun while doing it. Cheers.</p>
     </div>
     <div>
         <h1>Sponsors</h1>
-        <p>Instant Day is not affiliated to any companies within the Instant Photography industry. The only organisation backing us is EK - Business Academy Copenhagen.</p>
+        <p class="my-4 max-w-3xl">Instant Day is not affiliated to any companies within the Instant Photography industry. The only organisation backing us is EK - Business Academy Copenhagen.</p>
     </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
     <div>
-        <h1>The judges</h1>
+        <h1 class="mb-4">The judges</h1>
         <h2>Submissions will be reviewed by:</h2>
+    </div>
+    <div class="grid grid-rows-1 justify-center md:grid-cols-5 gap-4 mt-8">
+      <img src="public/judges/jh.png" alt="Judge 1">
+      <img src="public/judges/ekstudents.png" alt="Judge 2">
+      <img src="public/judges/bh.png" alt="Judge 3">
+      <img src="public/judges/sg.png" alt="Judge 4">
+      <img src="public/judges/ad.png" alt="Judge 5">
     </div>
       </section>
 </MainLayout>
