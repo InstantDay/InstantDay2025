@@ -1,0 +1,101 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ButtonBlack from "../components/ButtonBlack.astro";
+---
+
+<MainLayout title="Share your instant">
+  <section class="w-full">
+    <div>
+      <form class="flex flex-col gap-4 max-w-md md:max-w-150 mx-auto my-12 border-2 border-black px-8 py-4" style={{ fontFamily: "Reenie Beanie" }}>
+        <div>
+          <label for="name" class="text-[length:var(--h2-size)]">Full name:</label>
+          <input type="text" class="block w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:ring-0 dark:border-b-neutral-900">
+        </div>
+
+        <div>
+          <label for="email" class="text-[length:var(--h2-size)]">Email:</label>
+          <input type="email" class="block w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:ring-0 dark:border-b-neutral-900">
+        </div>
+<div>
+  <div class="flex items-center justify-between">
+    <label class="text-[length:var(--h2-size)]">Photo:</label>
+    <label
+      class="w-55 h-12 md:w-64 md:h-13
+             inline-flex items-center justify-center
+             bg-transparent
+             border border-[var(--color-brown)] text-[var(--color-brown)]
+             transition-all duration-300 ease-in-out
+             hover:border-4
+             font-subheading leading-none
+             text-[length:var(--h2-mobile-size)] md:text-[length:var(--h2-size)]
+             cursor-pointer ml-4"
+    >
+      Upload
+      <input id="file-upload" type="file" class="hidden" />
+    </label>
+  </div>
+  <input
+    type="text"
+    class="block w-full bg-transparent border-black border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 mt-2"
+    style="pointer-events: none;"
+    placeholder=""
+  >
+</div>
+
+        <div>
+          <label for="submission-title" class="text-[length:var(--h2-size)]">Submission Title:</label>
+          <input type="text" id="submission-title" class="block w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:ring-0 dark:border-b-neutral-900">
+        </div>
+
+        <div>
+          <label for="submission-description" class="text-[length:var(--h2-size)]">Submission Description:</label>
+          <textarea id="submission-description" rows="3" class="block w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:ring-0 dark:border-b-neutral-900 text-xl" style={{ fontFamily: "Reenie Beanie" }} placeholder="Describe the image and how you took it in a sentence or two."></textarea>
+        </div>
+        
+        <div class="border-2 p-2 h-32 overflow-y-auto dark:border-neutral-700 mt-2">
+          <p class="text-[var(--h2-mobile-size)] md:text-[var(--h2-size)] font-semibold mb-2">Terms & Conditions</p>
+          <p class="text-sm">By participating in the contest, you accept the following terms and conditions:<br /><br />
+            <strong>Participation:</strong> The competition is open to all photographers, both amateurs and professionals, who are over 18 years old.
+            <br /><br />
+            <strong>Instant Photo:</strong> Every submission has to be an analogue instant photo - not a digital montage made in a photo editing suite. The instant can be made in various ways, with analogue instant cameras, digital instant cameras like ie. the Fujifilm EVO or scan-and-print tools like ie. the Polaroid Lab. The instant photo can be manipulated with analogue processes - the organizers encourage instant photography experiments. The submission can depict the instant photo in many ways: As a flat scan without or without the instant photo frame, as a photo showing the instants in a frame, on the wall etc. The instant doesn’t need to be just one photo: It can be a panorama or collage of multiple instants that make up one submission.
+            <br /><br />
+            <strong>Consent:</strong> It is prohibited to upload photographs of people who have not given consent to the publication of the image. Images of people in private or embarrassing situations, regardless of whether they are photographed in a public place, are not allowed.
+            <br /><br />
+            <strong>Legal Stuff:</strong> The organizers reserve the right to disqualify any participant who violates these conditions. The organizers assume no responsibility for any loss, damage or injury that may arise as a result of participation in the competition or the use of prizes. Participants release the organizers from any claim, lawsuit or liability related to their participation in the competition.
+            <br /><br />
+            <strong>Number of submissions:</strong> You can enter the competition with a total of five submissions.
+            <br /><br />
+            <strong>Usage rights:</strong> By submitting one or more images and thereby participating in the competition, you agree that the image may be used for the promotion of the photo competition and possibly in physical exhibition spaces afterwards. The organizers will credit the participants wherever practical and reasonably possible.
+            <br /><br />
+            <strong>Copyright:</strong> You must be the author of the submitted instants and have the rights to publish them. The instants must be free of third party rights. Participants retain all copyright in their submitted instants. By submitting instants to the competition, participants grant the organizers a non-exclusive license to use, reproduce and publish the submitted images in connection with the promotion of the competition, including on social media platforms, websites and printed materials. The organizers will credit the participants wherever practical and reasonable.
+            <br /><br />
+            <strong>Announcement of Winners:</strong> The winners of the competition will be announced on the official website and/or social media platforms of the organizers. By participating in the competition, the winners consent to the publication of their names and submitted photos for promotional purposes.
+          </p>
+          <label class="flex items-center mt-2 text-sm">
+            I have read and agree to the Terms & Conditions
+            <input type="checkbox" class="ml-2">
+          </label>
+        </div>
+        <ButtonBlack type="submit" class="cursor-pointer inline-block px-8 mb-2 border-black border-2 text-[length:var(--h2-size)] mx-auto">Submit</ButtonBlack>
+      </form>
+    </div>
+  </section>
+
+  <style>
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 1000px #edeae2 inset !important;
+      box-shadow: 0 0 0 1000px #edeae2 inset !important;
+      -webkit-text-fill-color: #000 !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+      font-size: 2rem;
+    }
+  </style>
+</MainLayout>
