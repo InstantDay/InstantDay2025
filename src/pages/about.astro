@@ -18,12 +18,12 @@ import MainLayout from "../layouts/MainLayout.astro";
         <h1 class="mb-4">The judges</h1>
         <h2>Submissions will be reviewed by:</h2>
     </div>
-    <div class="grid grid-rows-1 justify-center md:grid-cols-5 gap-4 mt-8">
-      <img src="public/judges/jh.png" alt="Judge 1">
-      <img src="public/judges/ekstudents.png" alt="Judge 2">
-      <img src="public/judges/bh.png" alt="Judge 3">
-      <img src="public/judges/sg.png" alt="Judge 4">
-      <img src="public/judges/ad.png" alt="Judge 5">
-    </div>
+<div class="max-w-md mx-auto flex overflow-x-auto gap-4 mt-6 md:max-w-none md:grid md:grid-cols-5 md:overflow-x-visible md:gap-4">
+  <img src="public/judges/jh.png" alt="Judge 1" class="w-32 md:w-auto" />
+  <img src="public/judges/ekstudents.png" alt="Judge 2" class="w-32 md:w-auto" />
+  <img src="public/judges/bh.png" alt="Judge 3" class="w-32 md:w-auto" />
+  <img src="public/judges/sg.png" alt="Judge 4" class="w-32 md:w-auto" />
+  <img src="public/judges/ad.png" alt="Judge 5" class="w-32 md:w-auto" />
+</div>
       </section>
 </MainLayout>
