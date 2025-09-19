@@ -1,0 +1,40 @@
+---
+import ButtonWhite from "../components/ButtonWhite.astro";
+---
+<section class="relative isolate min-h-[120vh] text-[var(--color-beige)] pt-10 gap-10">
+  <!-- Baggrundsbillede -->
+  <img src="public/how_to_participate_bg.png" alt=""
+       class="absolute inset-0 -z-10 w-full h-full"
+       aria-hidden="true"/>
+
+  <div class="flex flex-col pt-39">
+    <div class="ml-5 mr-5 md:ml-20">
+      <h1>How to participate</h1>
+      <h2 class="mt-6 mb-3">
+        Got an instant photo ready for the public? In order to take part in InstantDay do this:
+      </h2>
+    </div>
+
+    <!-- Mobil-version af SVG -->
+    <div class="flex justify-center md:hidden">
+      <img 
+        class="flex items-center justify-center h-[545px] w-[85%] max-w-[490px]" 
+        src="svg/step_by_step_mobil.svg" 
+        alt="Step by step guide - mobile version"
+      >
+    </div>
+
+    <!-- Desktop-version af SVG -->
+    <div class="hidden md:flex justify-center">
+      <img 
+        class="flex items-center justify-center w-[100%] max-w-[1200px]" 
+        src="svg/step_by_step.svg" 
+        alt="Step by step guide - desktop version"
+      >
+    </div>
+
+   <div class="flex justify-center mt-15 mb-10 z-20">
+      <ButtonWhite>Submit a photo</ButtonWhite>
+  </div>
+</section>
+

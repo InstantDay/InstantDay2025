@@ -5,46 +5,53 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import ButtonBlack from "../components/ButtonBlack.astro";
+import Htp from "../components/Htp.astro";
+import AnimatedImg from "../components/AnimatedImg.astro";
 ---
 <MainLayout title="Home">
   <!-- HERO -->
-  <section class="relative isolate min-h-[120vh] md:min-h-[110vh]">
-    <!-- Baggrundsbillede -->
-    <img
-      src="/hero.png"
-      alt=""
-      class="absolute inset-0 -z-10 w-full h-full object-cover object-bottom"
-      aria-hidden="true"
-    />
+<section class="relative isolate min-h-[120vh] md:min-h-[110vh]">
+  <!-- Baggrundsbillede -->
+  <img
+    src="/hero.png"
+    alt=""
+    class="absolute inset-0 -z-10 w-full h-full object-cover object-bottom"
+    aria-hidden="true"
+  />
 
-    <!-- Logo -->
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <div></div>
-      <div class="flex justify-center">
-        <img 
-          class="w-[70%] md:w-[68%] pt-25 mx-auto md:mx-0" 
-          src="svg/logo_hero.svg" 
-          alt="Instant Day Logo"
-        >
-      </div>
+  <!-- Logo (uforandret) -->
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div></div>
+    <div class="flex justify-center">
+      <img 
+        class="w-[70%] md:w-[68%] pt-25 mx-auto md:mx-0" 
+        src="svg/logo_hero.svg" 
+        alt="Instant Day Logo"
+      >
     </div>
+  </div>
 
-    <!-- Tekst -->
-    <div class="col-span-1 md:col-span-2 text-center mt-10">
-      <p class="font-heading text-[24px] md:text-[28px] leading-tight text-[var(--color-beige)]">
-        Join us the 18th of October
-      </p>
-    </div>
+  <!-- Tekst + CTA-knapper placeret lidt højere -->
+  <div class="absolute bottom-40 inset-x-0 flex flex-col items-center text-center">
+    <p class="font-heading text-[24px] md:text-[28px] leading-tight text-[var(--color-beige)]">
+      Join us the 18th of October
+    </p>
 
-    <!-- CTA-knapper -->
-    <div class="grid grid-cols-1 md:grid-cols-3 pt-8 gap-4 max-w-4xl mx-auto">
-      <ButtonWhite>Submit a photo</ButtonWhite>
-      <ButtonWhite>Save the date</ButtonWhite>
-      <ButtonWhite>See the gallery</ButtonWhite>
-    </div>
-  </section>
+ <div class="grid grid-cols-1 md:grid-cols-5 gap-4 m-10"> 
+  <ButtonWhite>Submit a photo</ButtonWhite> 
+
+  <div></div>
+  <ButtonWhite>Save the date</ButtonWhite> 
+ 
+  <div></div>
+  <ButtonWhite>See the gallery</ButtonWhite> 
+</div>
+  </div>
+</section>
+
 
   <!---------------------------------------------SLUT HERO HER-->
+  <AnimatedImg/>
 
   <!-- SEKTION 2 -->
   <section class="container-global py-12 md:py-20 px-6 md:px-20">
@@ -91,6 +98,8 @@ import ButtonBlack from "../components/ButtonBlack.astro";
       </div>
     </div>
   </section>
+
+<Htp />
 
   <!---------------------------------------------SLUT sektion 2 HER-->
 
