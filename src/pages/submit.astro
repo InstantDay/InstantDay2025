@@ -2,13 +2,14 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import ButtonBlack from "../components/ButtonBlack.astro";
 import Htp from "../components/Htp.astro";
+import AnimatedImg from "../components/AnimatedImg.astro";
 ---
 
 <MainLayout title="Share your instant">
  <Htp/>
   <section class="w-full">
     <div>
-      <form class="flex flex-col gap-4 max-w-md md:max-w-150 mx-auto my-12 border-2 border-black px-8 py-4" style={{ fontFamily: "Reenie Beanie" }}>
+      <form class="flex flex-col gap-4 max-w-md md:max-w-150 mx-auto my-20 border-2 border-black px-8 py-4" style={{ fontFamily: "Reenie Beanie" }}>
         <div>
           <label for="name" class="text-[length:var(--h2-size)]">Full name:</label>
           <input type="text" class="block w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:ring-0 dark:border-b-neutral-900">
@@ -82,6 +83,9 @@ import Htp from "../components/Htp.astro";
       </form>
     </div>
   </section>
+  
+    <AnimatedImg/>
+
 
   <style>
     input:-webkit-autofill,
