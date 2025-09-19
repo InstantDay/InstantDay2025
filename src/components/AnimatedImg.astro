@@ -1,0 +1,39 @@
+<div class="w-full overflow-hidden">
+  <!-- Track som flyttes -->
+  <div class="flex w-max animate-infinite-scroll">
+    <!-- Sekvens A -->
+    <ul class="flex items-center gap-8 shrink-0">
+      <li><img src="polaroid_sek_2/grid_1/1_1.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_2.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_2_2.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_3_2.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_1.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_2.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_3_1.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_3_2.png" alt="" class="block w-auto max-h-40" /></li>
+    </ul>
+
+    <!-- Sekvens A igen (MÅ være 100% identisk) -->
+    <ul class="flex items-center gap-8 shrink-0" aria-hidden="true">
+      <li><img src="polaroid_sek_2/grid_1/1_1.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_2.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_2_2.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_1/1_3_2.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_1.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_2.png"   alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_3_1.png" alt="" class="block w-auto max-h-40" /></li>
+      <li><img src="polaroid_sek_2/grid_2/2_3_2.png" alt="" class="block w-auto max-h-40" /></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+@keyframes infinite-scroll {
+  0%   { transform: translate3d(0,0,0); }
+  100% { transform: translate3d(-50%,0,0); } /* præcis en halvdel (A) */
+}
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+  will-change: transform;
+}
+</style>
