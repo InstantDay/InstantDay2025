@@ -1,0 +1,12 @@
+---
+const { nominees } = Astro.props;
+---
+
+<a class="nominees-card" data-={JSON.stringify(nominees)}>
+  <article>
+    <img src={nominees.image} />
+    <h2 class="p-5">{nominees.name}</h2>
+    <h3>{nominees.submitter}</h3>
+    <p>{nominees.description}</p>
+  </article>
+</a>
