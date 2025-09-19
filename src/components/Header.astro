@@ -2,23 +2,32 @@
 
 ---
 
-<nav class="w-full flex items-center justify-between px-6 py-4">
+<nav
+  class="w-full flex items-center justify-center px-6 py-4 text-2xl"
+  style={{ fontFamily: "Dream Orphans" }}
+>
   <!-- Venstre lenker -->
-  <div class="flex space-x-6">
+  <div class="flex gap-15">
     <a href="/about" class="">ABOUT</a>
     <a href="/winners" class="">WINNERS AND NOMINEES</a>
   </div>
 
   <!-- Logo i midten -->
-  <div class="flex-shrink-0">
-    <a href="/index" aria-label="Instant Day Home">
+  <div class="flex-shrink-0 m-15">
+    <a href="/" aria-label="Instant Day Home">
       <img src="/svg/logo.svg" alt="Instant Day logo" class="h-10 w-auto" />
     </a>
   </div>
 
   <!-- Høyre lenker -->
-  <div class="flex space-x-6">
-    <a href="/share" class="">SHARE YOUR INSTANTS</a>
-    <a href="/contact" class="">CONTACT</a>
+  <div class="flex gap-15">
+    <a href="/submit" class="">SHARE YOUR INSTANTS</a>
+    <a href="#footer" class="">CONTACT</a>
   </div>
 </nav>
+
+<!-- <style>
+    .nav {
+        display: flex; justify-content: sp;
+    }
+</style> -->
