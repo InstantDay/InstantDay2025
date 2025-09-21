@@ -1,6 +1,6 @@
-<svg width="333" height="146" viewBox="0 0 333 146" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M0.587891 144.89V17.8952L19.3675 15.6372L34.1741 21.2014L44.4063 21.2015L77.0682 10.6548L95.6436 23.4787L121.039 10.6548L135.756 15.6372L146.794 14.6098L182.957 23.4787L222.884 16.2877L252.683 20.4825L295.946 11.2532L317.801 17.6809L332.299 26.7146V144.89H0.587891Z" fill="#221C19" fill-opacity="0.9" stroke="black"/>
-<rect x="332.301" y="42.9866" width="331.712" height="42.7993" transform="rotate(-179.991 332.301 42.9866)" fill="url(#pattern0_534_342)"/>
+<svg width="333" height="116" viewBox="0 0 333 116" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0.597656 115.342V18.6444L19.3771 16.9251L34.1834 21.1619L44.4155 21.1619L77.077 13.1313L95.6523 22.8959L121.047 13.1313L135.764 16.9251L146.802 16.1428L182.965 22.8959L222.891 17.4204L252.689 20.6145L295.953 13.587L317.807 18.4813L332.305 25.3598V115.342H0.597656Z" fill="#352F2C"/>
+<rect x="332.301" y="42.9861" width="331.712" height="42.7993" transform="rotate(-179.991 332.301 42.9861)" fill="url(#pattern0_534_342)"/>
 <defs>
 <pattern id="pattern0_534_342" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_534_342" transform="matrix(0.000520833 0 0 0.00403667 0 -2.75705)"/>
