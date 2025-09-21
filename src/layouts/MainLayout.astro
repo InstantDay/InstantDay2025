@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 const { title } = Astro.props;
+const isHome = Astro.url.pathname === "/";
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -21,8 +22,8 @@ const { title } = Astro.props;
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
-    <Header />
+  <body class={isHome ? "home" : ""}>
+    <Header isHome={isHome} />
 
     <main>
       <slot />
