@@ -3,31 +3,96 @@
 ---
 
 <nav
+  x-data="{ open: false}"
+  class="w-full flex items-center justify-between md:justify-center px-6 py-4 text-2xl tracking-widest"
+  style="font-family: 'Dream Orphans'"
+>
+  <!-- Venstre linker (desktop) -->
+  <div class="hidden md:flex gap-15 mr-15">
+    <a href="/about">ABOUT</a>
+    <a href="/winners">WINNERS AND NOMINEES</a>
+  </div>
+
+  <!-- Logo i midten -->
+  <div class="flex-shrink-0">
+    <a href="/" aria-label="Instant Day Home">
+      <img src="/svg/logo.svg" alt="Instant Day logo" class="h-10 w-auto" />
+    </a>
+  </div>
+
+  <!-- Høyre linker (desktop) -->
+  <div class="hidden md:flex gap-15 ml-15">
+    <a href="/submit">SHARE YOUR INSTANTS</a>
+    <a href="#footer">CONTACT</a>
+  </div>
+
+  <!-- Burger (mobil) -->
+  <button
+    @click="open = !open"
+    class="md:hidden flex items-center focus:outline-none z-50"
+    aria-label="Toggle menu"
+  >
+    <svg
+      x-show="!open"
+      class="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+    <svg
+      x-show="open"
+      x-transition
+      class="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+
+  <!-- Overlay (mobil) -->
+  <div
+    x-show="open"
+    x-transition
+    class="fixed inset-0 bg-[#E8E4DD] flex flex-col items-center justify-center space-y-8 text-3xl z-40"
+  >
+    <a href="/about" @click="open = false">ABOUT</a>
+    <a href="/winners" @click="open = false">WINNERS AND NOMINEES</a>
+    <a href="/submit" @click="open = false">SHARE YOUR INSTANTS</a>
+    <a href="#footer" @click="open = false">CONTACT</a>
+  </div>
+</nav>
+
+<!-- <nav
   class="w-full flex items-center justify-center px-6 py-4 text-2xl"
   style={{ fontFamily: "Dream Orphans" }}
 >
-  <!-- Venstre lenker -->
   <div class="flex gap-15">
     <a href="/about" class="">ABOUT</a>
     <a href="/winners" class="">WINNERS AND NOMINEES</a>
   </div>
 
-  <!-- Logo i midten -->
   <div class="flex-shrink-0 m-15">
     <a href="/" aria-label="Instant Day Home">
       <img src="/svg/logo.svg" alt="Instant Day logo" class="h-10 w-auto" />
     </a>
   </div>
 
-  <!-- Høyre lenker -->
   <div class="flex gap-15">
     <a href="/submit" class="">SHARE YOUR INSTANTS</a>
     <a href="#footer" class="">CONTACT</a>
   </div>
-</nav>
-
-<!-- <style>
-    .nav {
-        display: flex; justify-content: sp;
-    }
-</style> -->
+</nav> -->
