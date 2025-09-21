@@ -3,11 +3,12 @@ import ButtonWhite from "../components/ButtonWhite.astro";
 ---
 <section class="relative isolate min-h-[120vh] text-[var(--color-beige)] pt-10 gap-10">
   <!-- Baggrundsbillede -->
-  <img src="/how_to_participate_bg.png" alt=""
+  <img src="/HtpBg.png" alt=""
        class="absolute inset-0 -z-10 w-full h-full md:h-270"
        aria-hidden="true"/>
 
-  <div class="flex flex-col pt-39">
+  <!-- Hele indholdet rykkes lidt op på mobil -->
+  <div class="flex flex-col pt-20 -translate-y-4 md:translate-y-0">
     <div class="ml-5 mr-5 md:ml-20">
       <h1>How to participate</h1>
       <h2 class="mt-6 mb-3">
@@ -18,7 +19,7 @@ import ButtonWhite from "../components/ButtonWhite.astro";
     <!-- Mobil-version af SVG -->
     <div class="flex justify-center md:hidden">
       <img 
-        class="flex items-center justify-center h-[545px] w-[85%] max-w-[490px]" 
+        class="flex items-center justify-center h-[545px] w-[85%] max-w-[350px]" 
         src="/svg/step_by_step_mobil.svg" 
         alt="Step by step guide - mobile version"
       >
@@ -27,14 +28,14 @@ import ButtonWhite from "../components/ButtonWhite.astro";
     <!-- Desktop-version af SVG -->
     <div class="hidden md:flex justify-center">
       <img 
-        class="flex items-center justify-center w-[100%] max-w-[1200px]" 
+        class="flex items-center justify-center w-[100%] max-w-[1000px]" 
         src="/svg/step_by_step.svg" 
         alt="Step by step guide - desktop version"
       >
     </div>
 
-   <div class="flex justify-center mt-12 mb-10 z-20">
+    <div class="flex justify-center mt-12 mb-10 z-20">
       <ButtonWhite>Submit a photo</ButtonWhite>
+    </div>
   </div>
 </section>
-
