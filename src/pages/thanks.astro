@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ButtonWhite from "../components/ButtonWhite.astro";
+---
+
+<MainLayout title="Thank you for your submission!">
+  <section class="relative w-full min-h-screen flex items-center justify-center text-[var(--color-beige)]">
+    <img
+      src="/how_to_participate_bg.png"
+      alt="How to Participate Background"
+      class="absolute inset-0 w-full h-full z-0"
+      aria-hidden="true"
+    />
+    <div class="relative z-10 flex flex-col justify-center w-full items-center gap-4">
+      <h1 class="mb-4">
+        Thanks! You’re an instant champ!<br/>Thanks for the contribution.
+      </h1>
+      <h2>Want to make one more submission? Start the submission form over.</h2>
+      <p class="w-140 text-center mb-6">The competition runs until October 18. Shortly after, we will review all the images, and announce a winner on October 31. 
+        If you’re one of the lucky winners or nominees, we will contact you by e-mail. Good luck!
+      </p>
+      <ButtonWhite>
+        <a href="/submit">Submit a photo</a>
+      </ButtonWhite>
+    </div>
+  </section>
+</MainLayout>
